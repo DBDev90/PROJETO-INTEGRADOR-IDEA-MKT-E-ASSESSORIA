@@ -1,0 +1,256 @@
+/* links */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+/* all */
+main{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/* Barra de tarefas */
+body{
+    background-color: rgb(34, 31, 31);
+    min-height: 100vh;
+}
+
+header{
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 0px 100px;
+}
+
+header .lamp{
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 2px;
+    width: 100px;
+    height: 100px;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #a0a0a0;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+header ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(167, 156, 7);
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -10px;
+    transition: 0.3s; 
+}
+
+header ul li a:hover{
+    color: #fff;
+}
+
+header ul li a:hover::after{
+    width: 100%;
+}
+
+/* txt ao lado da img */
+.block{
+    margin-top: 95px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.block .txt{
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+
+.block a{
+    margin: 10%;
+    color: #000;
+    background-color : rgb(246, 183, 52);
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 80%);
+	padding:10px;
+}
+
+.block a:hover{
+    background-color : rgb(255, 214, 0);
+}
+
+.block img{
+    height: 300px;
+    width: 300px;
+}
+
+/* nas redes */
+.acompanhe{
+    margin: 10%;
+    text-align: center
+}
+
+.acompanhe h1{
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
+
+.acompanhe img{
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    transition: 0.6s;
+}
+
+.acompanhe img:hover{
+    transform: scale(1.2);
+}
+
+/* Quebra de tela */
+
+/* blocos */
+.conhecer{
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    height: 550px;
+    display: flex;
+    text-align: center;
+}
+.conhecer .bloco{
+    margin: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.conhecer img{
+    width: 425px;
+    height: 300px;
+    border-radius: 4px;
+}
+
+.conhecer h1{
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+}
+
+.conhecer p{
+    margin-bottom: 6%;
+}
+
+.conhecer a{
+    color: #000;
+    background-color : rgb(246, 183, 52);
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 80%);
+    padding:10px;
+    border-radius: 4px;
+}
+
+.conhecer a:hover{
+    background-color : rgb(255, 214, 0);
+}
+
+/* Quebra de tela */
+
+/* Rodapé */
+.rodape{
+    margin: 0;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #000;
+}
+
+.rodape img{
+    height: 30px;
+    width: 30px;
+}
+
+.rodape h1{
+    color: #fff;
+}
+
+.rodape .contato{
+    margin: 10px;
+    display: flex;
+}
+
+.rodape .contato p{
+    color: #fff;
+    margin: 10px;
+}
+
+.rodape .contato .numero{
+    display: flex;
+    align-items: center;
+}
+
+.rodape .contato .icons{
+    display: flex;
+    align-items: center;
+}
+
+.rodape .icons p{
+    color: #fff;
+    margin: 10px;
+}
+
+.rodape .icons a{
+    margin: 10px;
+}
+
+.rodape .local{
+    display: flex;
+}
+
+.rodape .local p{
+    color: #fff;
+}
+
+.rodape .rota{
+    align-items: center;
+    display: flex;
+}
+
+.rodape .rota a{
+    margin: 10px;
+}
+
+.rodape .direitos{
+    margin: 10px;
+    margin-left: 40px;
+}
