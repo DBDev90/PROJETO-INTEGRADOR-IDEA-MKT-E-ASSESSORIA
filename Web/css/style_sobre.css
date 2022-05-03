@@ -38,27 +38,65 @@ header {
     height: 100px;
     background-color: black;
     margin-bottom: 20px;
+    width: 100%;
+    position: fixed;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header .menu {
-    display: flex;
-    max-width: 23rem;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.header .menu a {
+.menu{
+    display: flex;
+    width: 60%;
+    justify-content: flex-end;
+}
+
+.menu ul{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+ .menu ul li {
+    display: flex;
+}
+
+ .menu li a{
     display: flex;
     color: white;
     font-size: 1.3rem;
     font-family: 'Cabin';
+}
+
+.menu ul li a::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #FFD700;
+    height: 2px;
+    width: 0;
+    bottom: 30px;
+    transition: 0.3s;
+}
+
+/* .menu ul li a:hover{
+    color: #FFD700;
+} */
+
+.menu ul li a:hover::after{
+    width: 3%;
+}
+
+.menu ul li:nth-child(2) a:hover::after{
+    width: 4%;
+}
+
+.menu ul li:nth-child(4) a:hover::after{
+    width: 6%;
 }
 
 /* TEXTO QUEM SOMOS */
@@ -82,7 +120,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.3rem;
+    font-size: 2rem;
     padding: 10px;
     margin: 10px;
 }
@@ -90,7 +128,7 @@ header {
 .quem-somos p {
     display: flex;
     align-items: center;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     padding: 15px;
 }
 
@@ -110,7 +148,7 @@ header {
     width: 100%;
 }
 
-.membros:nth-child(1){
+.membros:nth-child(1) {
     margin-bottom: 30px;
 }
 
@@ -128,9 +166,10 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    font-size: 0.7rem;
 }
 
-.equipe-colaborador{
+.equipe-colaborador {
     display: flex;
     justify-content: space-between;
 }
@@ -138,15 +177,19 @@ header {
 /* FOOTER */
 footer {
     background-color: black;
-    height: 400px;
+    height: 200px;
     color: white;
     display: flex;
     align-items: center;
     font-family: 'Cabin';
 }
 
+footer section p {
+    font-size: 0.9rem;
+}
+
 footer a img {
-    height: 30px;
+    height: 20px;
 }
 
 .rodape {
@@ -156,16 +199,18 @@ footer a img {
     margin-top: 20px;
 }
 
-.rodape h2{
+.rodape h2 {
     margin-bottom: 20px;
+    font-size: 1rem;
 }
 
 .contato {
     display: flex;
     font-size: 1.3rem;
     width: 100%;
-    margin: 30px 0;
+    margin: 10px 0;
 }
+
 
 .info {
     display: flex;
@@ -187,17 +232,17 @@ footer a img {
 .icons {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 70%;
-    margin-right: 100px;
-    margin-left: 130px;
+    margin-right: 85px;
+    /* margin-left: 130px; */
 }
 
-.icons::before{
+.icons::before {
     content: "";
-    height: 50px;
+    height: 40px;
     width: 2px;
-    margin-right: 5px;
+    /* margin-right: 2px; */
     background-color: white;
     position: relative;
 }
@@ -214,14 +259,15 @@ footer a img {
     width: 50%;
 }
 
-.rota a{
+.rota a {
     margin-right: 20px;
 }
 
-.rota a img{
-    height: 40px;
+.rota a img {
+    height: 30px;
+    align-items: flex-start;
 }
 
-.direitos{
-    margin-right: 100px;
+.direitos {
+    margin-right: 128px;
 }
