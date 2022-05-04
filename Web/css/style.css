@@ -1,145 +1,149 @@
-/* links */
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
-
 /* all */
-main{
+main {
     margin-left: 200px;
     margin-right: 200px;
 }
 
 /* Barra de tarefas */
-body{
-    background-color: rgb(34, 31, 31);
+body {
+    background-color: #1A1A18;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Andika New Basic';
     min-height: 100vh;
 }
 
-header{
-    background-color: #000;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    box-sizing: border-box;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 0px 100px;
-}
-
-header .lamp{
-    position: relative;
-    text-decoration: none;
-    letter-spacing: 2px;
-    width: 100px;
-    height: 100px;
-    transition: 0.6s;
-}
-
-header ul{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header ul li{
-    position: relative;
-    list-style: none;
-}
-
-header ul li a{
-    font-family: 'Nunito', sans-serif;
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #a0a0a0;
-    letter-spacing: 2px;
-    font-weight: 500px;
-    padding: 0 10px;
-    cursor: pointer;
-}
-
-header ul li a::after{
-    content: "";
-    position: absolute;
-    background-color: rgb(167, 156, 7);
-    height: 3px;
-    width: 0;
-    left: -1px;
-    bottom: -10px;
-    transition: 0.3s; 
-}
-
-header ul li a:hover{
-    color: #fff;
-}
-
-header ul li a:hover::after{
+body .principal {
     width: 100%;
 }
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 
 /* txt ao lado da img */
-.block{
-    margin-top: 95px;
-    padding: 40px;
+.block {
     display: flex;
+    margin-top: 150px;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: justify;
+    /* min-height: 30vh; */
+}
+
+.block .txt {
+    color: #FFFFFF;
+    font-family: 'Bebas Neue';
+    width: 65%;
+    /* min-height: 900px; */
+}
+
+.txt h1 {
+    font-size: 2.4rem;
+    text-align: justify;
     align-items: center;
 }
 
-.block .txt{
-    color: #fff;
-    font-family: 'Nunito', sans-serif;
+.txt p {
+    font-family: 'Karla';
+    margin-top: 45px;
+    font-size: 1.2rem;
 }
 
-.block a{
-    margin: 10%;
+.block a {
+    /* margin-top: 200px; */
     color: #000;
-    background-color : rgb(246, 183, 52);
+    background-color: #FFD700;
     text-decoration: none;
-    border-radius: 4px;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 80%);
-	padding:10px;
+    border-radius: 10px;
+    /* box-shadow: 0 5px 15px rgb(0 0 0 / 80%); */
+    padding: 12px;
+    font-size: 1.1rem;
+    font-family: 'Cabin';
 }
 
-.block a:hover{
-    background-color : rgb(255, 214, 0);
+.block a:nth-child(1){
+    padding: 15px 35px;
 }
 
-.block img{
-    height: 300px;
-    width: 300px;
+.block a:nth-child(2){
+    padding: 15px 20px;
+}
+
+.block a:hover {
+    background-color: rgb(255, 214, 0);
+}
+
+.btn-acao{
+    display: flex;
+    margin-top: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 65%;
+
+}
+
+.block img {
+    height: 270px;
+}
+
+.img-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* nas redes */
-.acompanhe{
-    margin: 10%;
-    text-align: center
+.redes-sociais{
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: justify;
 }
 
-.acompanhe h1{
-    font-family: 'Nunito', sans-serif;
+.acompanhe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.acompanhe h2 {
+    font-family: 'Karla';
+    font-weight: 5px;
     color: #fff;
+    margin-bottom: 20px;
 }
 
-.acompanhe img{
-    margin: 20px;
+.acompanhe img {
+    /* margin: 20px;
     height: 50px;
-    width: 50px;
+    width: 50px; */
+    height: 50px;
     transition: 0.6s;
 }
 
-.acompanhe img:hover{
+.acompanhe img:hover {
     transform: scale(1.2);
+}
+
+.redes{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-bottom: 10px;
 }
 
 /* Quebra de tela */
 
 /* blocos */
-.conhecer{
+.conhecer {
     margin: 0;
     padding: 0;
     margin-top: 40px;
@@ -147,110 +151,52 @@ header ul li a:hover::after{
     display: flex;
     text-align: center;
 }
-.conhecer .bloco{
+
+.conhecer .bloco {
     margin: 10px;
     box-sizing: border-box;
     background: #fff;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
-.conhecer img{
-    width: 425px;
-    height: 300px;
-    border-radius: 4px;
+.card img {
+    margin-top: 20px;
+    height: 170px;
+    width: 260px;
+    border-radius: 40px;
+    margin-bottom: 20px;
 }
 
-.conhecer h1{
-    font-family: 'Nunito', sans-serif;
+.titulo-card {
+    font-family: 'Andika New Basic';
+    font-size: 1.3rem;
     color: #000;
+    align-items: center;
 }
 
-.conhecer p{
-    margin-bottom: 6%;
+.texto-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
 }
 
-.conhecer a{
+.texto-card p{
+    text-align: justify;
+    font-size: 0.8rem;
+}
+
+.btn-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-card a{
     color: #000;
-    background-color : rgb(246, 183, 52);
+    background-color: #FFD700;
     text-decoration: none;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 80%);
-    padding:10px;
-    border-radius: 4px;
-}
-
-.conhecer a:hover{
-    background-color : rgb(255, 214, 0);
-}
-
-/* Quebra de tela */
-
-/* Rodapé */
-.rodape{
-    margin: 0;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-bottom: -8px;
-    padding: 10px;
-    margin-top: 30px;
-    background-color: #000;
-}
-
-.rodape img{
-    height: 30px;
-    width: 30px;
-}
-
-.rodape h1{
-    color: #fff;
-}
-
-.rodape .contato{
-    margin: 10px;
-    display: flex;
-}
-
-.rodape .contato p{
-    color: #fff;
-    margin: 10px;
-}
-
-.rodape .contato .numero{
-    display: flex;
-    align-items: center;
-}
-
-.rodape .contato .icons{
-    display: flex;
-    align-items: center;
-}
-
-.rodape .icons p{
-    color: #fff;
-    margin: 10px;
-}
-
-.rodape .icons a{
-    margin: 10px;
-}
-
-.rodape .local{
-    display: flex;
-}
-
-.rodape .local p{
-    color: #fff;
-}
-
-.rodape .rota{
-    align-items: center;
-    display: flex;
-}
-
-.rodape .rota a{
-    margin: 10px;
-}
-
-.rodape .direitos{
-    margin: 10px;
-    margin-left: 40px;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1.1rem;   
 }
