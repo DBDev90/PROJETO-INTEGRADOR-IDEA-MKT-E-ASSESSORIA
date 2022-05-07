@@ -150,6 +150,7 @@ body .principal {
     height: 550px;
     display: flex;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .conhecer .bloco {
